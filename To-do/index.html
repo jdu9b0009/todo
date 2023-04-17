@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/image/to-do-list.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>メモ帳</h1>
+      <form>
+        <label for="task">課題：</label>
+        <input type="text" id="task" name="task" />
+        <label for="date-time">日付 & 時間：</label>
+        <input type="datetime-local" id="date-time" name="date-time" />
+        <button type="submit" id="submit">課題追加</button>
+      </form>
+      <ul id="tasks"></ul>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2>編集課題</h2>
+        <form>
+          <label for="task-edit">課題：</label>
+          <input type="text" id="task-edit" name="task-edit" />
+          <label for="date-time-edit">日付 & 時間：</label>
+          <input type="datetime-local" id="date-time-edit" name="date-time-edit" />
+          <button type="submit" id="save-edit">保存</button>
+          <button type="button" id="cancel-edit">キャンセル</button>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

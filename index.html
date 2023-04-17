@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
+    <link rel="icon" href="/image/to-do-list.ico" />
+  </head>
+  <body>
+    <div class="form">
+      <h3>サインアップ</h3>
+      <div class="name">
+        <label for="name">名前</label>
+        <input type="name" name="name" id="name"/>
+      </div>
+      <div class="email">
+        <label for="email">メールアドレス</label>
+        <input type="email" name="email" id="email"/>
+      </div>
+      <div class="pass">
+        <label for="password">パスワード</label>
+        <input type="password" name="password" id="password"/>
+      </div>
+
+      <button id="submit-btn" onclick="signUp()">サインアップ</button>
+      <p>すでにアカウントをお持ちですか？</p><br>
+      <span><a href="signIn.html">サインイン</a></span>
+      <p></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
